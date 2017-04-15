@@ -14,6 +14,14 @@ cite {
   padding-left: 0px;
 }
 
+#external-links {
+  box-sizing; border-box; 
+  width:22%;
+  padding:20px;
+  border:1px solid #dddd;
+  float:left;
+}
+
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like, 
 but it's optional! */
@@ -29,4 +37,21 @@ figure {
 figcaption {
   font-style: italic;
   text-align: right;
+}
+
+main{
+
+  width:75%;
+  padding-left:30%;
+  margin:.5em auto;
+  position: absolute;
+  float:right;
+  max-width: 500px;
+}
+
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
 }
