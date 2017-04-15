@@ -1,22 +1,24 @@
 
-
+.web{
+	position:relative;
+}
 
 
 #octopus{
 
 	text-align: center;
-	width: 400px;
+	width: 100%;
 	margin: 120px auto;
 }
 
 #hat{
 	position: absolute;
-	top:20px;
-	left:520px;
+	top:-90px;
+	left:510px;
 }
 
 #glasses{
 	position: absolute;
-	top: 220px;
-	left: 575px;
+	top: 100px;
+	left: 565px;
 }
