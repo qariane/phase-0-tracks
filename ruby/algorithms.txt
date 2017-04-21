@@ -1,0 +1,6 @@
+
+   When someone is in the elevator, it is going up or down. 
+a.       It will go up and stop at every floor where either: 1) someone in the elevator has selected, or 2) someone outside the elevator has pressed the up button
+b.      It will go down and stop at every floor where: 1) someone in the elevator has selected, or 2) someone outside the elevator has pressed the button
+2    It will always stop at the bottom floor when going down if someone has pressed the up button
+3    It will always stop at the top floor when going up if someone has pressed the down button
