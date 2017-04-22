@@ -1,3 +1,53 @@
+h1{
+  background-color: #40c449;
+  background-image: url("http://www.publicdomainpictures.net/pictures/150000/velka/banner-header-tapete-1451806190xbC.jpg");
+  padding: 50px;
+  font-family: calibri;
+}
+h2{
+  font-weight: bold;
+}
+
+.info{
+  padding: 10px;
+  font-size: 20px;
+  background-color: #66CDAA;
+}
+
+
+.column-1{
+  
+  
+ display:block;
+ float:left;
+ width:45%;
+ padding-left: 10px;
+}
+
+
+.column-2{
+  
+  display:block;
+  
+  float:right;
+  width:45%;
+  padding-right: 10px;
+}
+footer{
+  background-color: #eaedea;
+  clear:both;
+}
+
 body{
-	background-color: purple 
+  padding:5px;
+  background-color:white;
+}
+
+article{
+  border-bottom: 1px solid #6f706f;
+  
+}
+
+details{
+  background-color: #eaedea;
 }
