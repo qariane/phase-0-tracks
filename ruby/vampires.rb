@@ -5,12 +5,11 @@ puts"how many employees will be processed?"
 
 employees = gets.chomp
 
-until employees == 0
+until employees == "#{employees}"
 
 	employees = employees - 1
 
 end 
-
 
 
 
