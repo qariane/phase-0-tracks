@@ -1,4 +1,18 @@
 
+employees = ""
+
+puts"how many employees will be processed?"
+
+employees = gets.chomp
+
+until employees == 0
+
+	employees = employees - 1
+
+end 
+
+
+
 
 puts "What is your name?"
 
@@ -7,23 +21,23 @@ name = gets.chomp
 
 puts "How old are you?"
 
-age = gets.chomp
+	age = gets.chomp
 
 puts "What year were you born?"
 
-year = gets.chomp
+	year = gets.chomp
 
 puts "Our company cafeteria serves garlic bread. Should we order some for you?"
 
-garlic= gets.chomp
+	garlic= gets.chomp
 
 puts "Would you like to enroll in the company's health insurance?"
 
-insurance= gets.chomp
+	insurance= gets.chomp
 
-current_year = 2017
+	current_year = 2017
 
-true_age = (current_year.to_i)
+	true_age = (current_year.to_i)
 
 if age == true_age
 
@@ -60,16 +74,16 @@ end
 #If the employee got their age wrong, and hates garlic bread or waives insurance, the result is “Probably a vampire.”
  
 print "What is your name?"
-name=gets.chomp
+	name=gets.chomp
 print "How old are you"
-age=gets.chomp
+	age=gets.chomp
 print"What year were you born??"
-birth_year=gets.chomp
+	birth_year=gets.chomp
  
 print "Our company cafeteria serves garlic bread. Should we order some for you? (y/n)"
-garlic=gets.chomp
+	garlic=gets.chomp
 print "Would you like to enroll in the company’s health insurance? (y/n)"
-insurance=gets.chomp
+	insurance=gets.chomp
  
 #If the employee got their age right, and is willing to eat garlic bread or sign up for insurance, the result is “Probably not a vampire.”
 if age && (garlic || insurance)
@@ -89,14 +103,14 @@ else
 end
 
 allergy = ""
-  until allergy = "done" 
-  puts  "Name any allergies, one at a time. Type done when you finished?"
-   allergy = gets.chomp
+  until allergy == "done" 
+  	puts  "Name any allergies, one at a time. Type done when you finished?"
+   	allergy = gets.chomp
 
-   if allergy == "sunshine"
-   	  p "Probably a vampire."
+  		if allergy == "sunshine"
+   	  puts "Probably a vampire."
 
-   	 end
+   	    end
 
    end  	
 
