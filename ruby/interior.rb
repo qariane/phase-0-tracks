@@ -1,26 +1,30 @@
+
 interior = {
 
-	  :Name => "Ariane",
+	  :Name => " "
 
-	  :Address => "7064 chicago",
 
-	  "Email" => "qgen@gmail.com",
+	  :Address =>" " 
 
-	  "Phone" => "312-345-1234",
+	  "Number of children" =>" "
 
-	  "Fave shade of blue" => "bue",
+	  "Email" =>" " 
+
+	  "Phone" => " "
+
+	  "Fave shade of blue" => " "
 }
 
 
 p interior
 
-interior ["Name"] = "Genny" 
+interior ["Name"] =  
 
 p interior ["Name"]
 
-interior["good"] = 500
+interior["good"] = " "
 
-interior["th"] = "tomor"
+interior["th"] = " "
 
 p interior 
  
