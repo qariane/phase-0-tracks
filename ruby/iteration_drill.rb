@@ -59,7 +59,7 @@ extinct_animals = {
 
 # 1. Iterate through extinct_animals hash, printing each key/value pair
 # with a dash in between the key and value, and an asterisk between each pair.
-extinct_animals.each{ |key, value| puts "#{key} - #{value} *" }
+extinct_animals.each{ |animals, year| puts "#{key} - #{value} *" }
 
 
 
