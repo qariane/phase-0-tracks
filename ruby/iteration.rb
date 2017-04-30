@@ -17,11 +17,11 @@ new_days = []
 	p week 
 	p new_days
  week.each do |days|
- 	if week[0] != 1
- 		new_days << days.next
- 	    true
- 	end  
-end 
+  
+	new_days << days.reverse
+ 	    
+   end 
+
 	puts "After .each call:"
 	p new_days
 
@@ -32,7 +32,7 @@ days = ["monday", "tuesday", "wenesday", "thursday", "friday" ]
 	p days	
 days.map! do |days|
 	puts days
- 	days.next
+ 	days.reverse
 	end 
 puts "After .map call:"
 p days
