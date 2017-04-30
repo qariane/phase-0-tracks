@@ -1,18 +1,19 @@
-A classroom = {
-	        board : {
+ classroom = {
+	        board: {
 	            name: 'board',
 	            materials: {
 	         	    chalk: 4,
 	         	    eraser: 1
 	           },
-	           hanger:[
-	           	   "bag"
+	           hanger: [
+	           	   "bag",
+	           	   "umbrella"
 	           ]
              },
             class_content: {
             	    name: 'class_content',
             	    table: {
-            	    	note_books: 3,
+            	    	note_books: 1,
             	    	pencil: 2,
             	    	pen: 5
             	    },
@@ -35,14 +36,13 @@ A classroom = {
           }
 
 
-classroom[:board] [:hanger].reverse
+classroom[:board][:hanger].reverse
 
-classroom[:teacher_desk][:hanger].push("bag")
+classroom[:teacher_desk][:hanger].push("coat")
 
-classroom[:class_content][:table][2]
+classroom[:class_content][:name]
 
-classroom [:class_content][:name]
-
+classroom[:class_content][:hanger][1]
 
 
 
