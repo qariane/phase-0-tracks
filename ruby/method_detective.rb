@@ -10,6 +10,7 @@
 
 # "zom".<???>
 # => “zoom”
+"zom".sub
 
 # "enhance".<???>
 # => "    enhance    "
