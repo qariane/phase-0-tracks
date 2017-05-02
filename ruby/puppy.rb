@@ -22,6 +22,8 @@ Behavior
 
 Australian Shepherds may be so inclined to herd that they may feel compelled to consider children part of their "flock"\
 
+Nipping and herding behaviors towards children should not be allowed
+
 They may get along with other pets, but may try to herd them too
 
 Fleeing cats are often a big temptation to chase
