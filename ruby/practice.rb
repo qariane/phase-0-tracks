@@ -1,17 +1,26 @@
-age_hash = { }	# start with an empty hash
-02 
-03 input = ""
-04 name = ""
-05 age = 0
-06 
-07 print "Enter name, age; or just ENTER to quit: "
-08 input = gets.chomp
-09 while input != "" do
-10 	(name, age) = input.split(",")
-11 	age = age.to_i
-12 	
-13 	age_hash[name] = age
-14 	
-15 	print "Enter name, age; or just ENTER to quit: "
-16 	input = gets.chomp
-17 end
+# 2. In order to keep yourself organized, sort your zombie_apocalypse_supplies
+# in alphabetical order. Do not use any special built-in methods.
+# ----
+
+# 3. Create a method to see if a particular item (string) is in the
+# zombie_apocalypse_supplies. Do not use any special built-in methods.
+# For instance: are boots in your list of supplies?
+# ----
+
+# 2. Keep only animals in extinct_animals if they were extinct before
+# the year 2000. Do not use any special built-in methods.
+ 
+ 
+# 3. Our calculations were completely off, turns out all of those animals went
+# extinct 3 years before the date provided. Update the values in extinct_animals
+# so they accurately reflect what year the animal went extinct.
+# Do not use any special built-in methods.
+# ----
+
+# 4. You've heard that the following animals might be extinct, but you're not sure.
+# Check if they're included in extinct_animals, one by one:
+#{}"Andean Cat".
+# "Dodo"
+# "Saiga Antelope"
+# Do not use any special built-in methods.
+# ----
