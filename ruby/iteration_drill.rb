@@ -65,8 +65,7 @@ extinct_animals.each{ |animals, year| puts "#{key} - #{value} *" }
 
 # 2. Keep only animals in extinct_animals if they were extinct before
 # the year 2000. Do not use any special built-in methods.
-extinct_animals.each { |animals, year| puts year < "2000" }
-}
+ 
  
 # 3. Our calculations were completely off, turns out all of those animals went
 # extinct 3 years before the date provided. Update the values in extinct_animals
