@@ -27,3 +27,5 @@ They may get along with other pets, but may try to herd them too
 Fleeing cats are often a big temptation to chase
 
 Australian Shepherd training should revolve around positive reinforcement training
+ 
+Fleeing cats are often a big temptation to chase.
