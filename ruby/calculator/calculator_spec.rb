@@ -2,6 +2,7 @@
 # add two integers and return an integer
 # subtract two integers and return an integer
 # multiply two integers and return an integer
+# divides two integers and return an integer
 
 # RSpec
 # 'describe' block for each group of tests  
@@ -24,4 +25,8 @@ describe Calculator do
   it "multiplies two integers" do
     expect(calculator.multiply(2,3)).to eq 6
   end
-end
+
+  it "divides two integers" do 
+    expect(calculator.divide(6,2)).to eq 3
+  end
+end 
