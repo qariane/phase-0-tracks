@@ -1,4 +1,4 @@
-// write a method that says hello
+// a string as a parameter and reverses the string
 
 function reverseString(str) {
  var newString = "";
@@ -16,8 +16,9 @@ function reverseString(str) {
 
 }
 
-
+//Add driver code that calls the function in order to reverse a string of your choice
 var reverse = reverseString("hello")
- var reverse = reverseString("hello")
  console.log(reverse)
+ //Add driver code that prints the variable if some condition is true
+ var reverse = reverseString("hello")
  console.log(1 == 1) 
