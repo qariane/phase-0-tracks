@@ -1,26 +1,37 @@
 // write a function that takes an array of words or phrases and returns 
 
+ function long(word ){
 
-var arr = ["long phrase","longest phrase","longer phrase"];
+ var longest = word[0];
 
+ for (var i = 0; i < word.length; i++){
 
- function long(){
+	if (word[i].length > longest.length){ 
+      
+            longest = word[i];
+       }  
+         
 
-var longest = 0;
-var longestis = " ";
-for(var i=0; i < arr.length; i++){
-    if(arr[i].length > longest){
-        longest = arr[i].length;
-        longestis = arr[i];
-    }  
-         return
-} 
+       } 
 
-         return longestis
+        return longest;
 }
 
 
 
-var sentence = long("longestis")
 
-console.log(sentence);
+
+
+
+
+
+
+
+
+
+
+// Driver code 
+
+var arr = ["long phrase","longest phrase","longer phrase"];
+
+console.log(long(arr));
