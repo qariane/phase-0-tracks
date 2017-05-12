@@ -35,4 +35,4 @@ var hash = {};
    console.log(this.model + ' is the fastest car i have ever drive!');
  };
  
- sport('camry')
+ sport('prius')
