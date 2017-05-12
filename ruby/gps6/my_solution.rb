@@ -1,7 +1,7 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [ with: Desmond].
+# We spent [2] hours on this challenge.
 
 # EXPLANATION OF require_relative
 # 
@@ -66,20 +66,7 @@ class VirusPredictor
     else
       speed += 2.5
     end
-=begin 
-     speed = case @population_density
-     when 
-      0.5
-    when 101..150
-      1
-    when 51..100
-      1.5
-    when  50
-      2
-    else
-      2.5
-    end
-=end
+
     puts " and will spread across the state in #{speed} months.\n\n"
 
   end
@@ -92,17 +79,17 @@ end
  # initialize VirusPredictor for each state
 
 
-alabama = VirusPredictor.new("Alabama") 
-alabama.virus_effects
+#alabama = VirusPredictor.new("Alabama") 
+#alabama.virus_effects
 
-jersey = VirusPredictor.new("New Jersey") 
-jersey.virus_effects
+#jersey = VirusPredictor.new("New Jersey") 
+#jersey.virus_effects
 
-california = VirusPredictor.new("California")
-california.virus_effects
+#california = VirusPredictor.new("California")
+#california.virus_effects
 
-alaska = VirusPredictor.new("Alaska")
-alaska.virus_effects
+#alaska = VirusPredictor.new("Alaska")
+#alaska.virus_effects
 
 
 def predictor_list(state)
@@ -113,4 +100,21 @@ state.each do |state, population|
 end
       predictor_list(STATE_DATA)
 #=======================================================================
-# Reflection Section
+=begin
+ Reflection Section
+What are the differences between the two different hash syntaxes shown in the state_data file?
+we have the symbol and the string.
+
+What does require_relative do? How is it different from require?
+require_relative incorporate files that are on the relative path and access the information within and require acees flies on the root of the computer.
+
+What are some ways to iterate through a hash?
+the basic way to iterate through a hash is by using .each
+
+When refactoring virus_effects, what stood out to you about the variables, if anything?
+They were all instance variables.
+
+What concept did you most solidify in this challenge?
+use of instance variable.
+
+=end
