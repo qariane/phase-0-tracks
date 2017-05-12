@@ -1,47 +1,56 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [ with: Desmond].
+# We spent [2] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
-#
+# 
+# require, the base function of require_relative, includes a referenced file in the current file, first searching in the ruby working directory for gems or other files located therein, then searching an absolute path if no matching file is found. Require_relative, additionally, starts its search in the same folder as the referencing file, a relative path. Whereas require would look from the root of the system, /.
+
 require_relative 'state_data'
 
 class VirusPredictor
 
-  def initialize(state_of_origin, population_density, population)
+# Takes variables from the linked document and applies them to internal variables.
+  def initialize(state_of_origin)
+    
     @state = state_of_origin
-    @population = population
-    @population_density = population_density
+    @population = STATE_DATA[state_of_origin][:population]
+    @population_density = STATE_DATA[state_of_origin][:population_density]
+    
+
   end
+
+# Executes the predicted_deaths() and speed_of_spread() functions
 
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths()
+    speed_of_spread()
   end
 
-  private
-
-  def predicted_deaths(population_density, population, state)
+ private 
+ 
+# Calculates predicted death toll based on population and density, printing result.
+  def predicted_deaths()
     # predicted deaths is solely based on population density
     if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
+     modifier = 0.4
     elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
+      modifier =  0.3
     elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
+      modifier = 0.2
     elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
+     modifier =  0.1
     else
-      number_of_deaths = (@population * 0.05).floor
+      modifier = 0.05
     end
-
+     number_of_deaths = (@population * modifier).floor
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   end
 
-  def speed_of_spread(population_density, state) #in months
+# Determines/estimates speed of spread only by population density, and reports
+  def speed_of_spread() #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0
@@ -49,7 +58,7 @@ class VirusPredictor
     if @population_density >= 200
       speed += 0.5
     elsif @population_density >= 150
-      speed += 1
+      #speed += 1
     elsif @population_density >= 100
       speed += 1.5
     elsif @population_density >= 50
@@ -70,18 +79,42 @@ end
  # initialize VirusPredictor for each state
 
 
-alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
-alabama.virus_effects
+#alabama = VirusPredictor.new("Alabama") 
+#alabama.virus_effects
 
-jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
-jersey.virus_effects
+#jersey = VirusPredictor.new("New Jersey") 
+#jersey.virus_effects
 
-california = VirusPredictor.new("California", STATE_DATA["California"][:population_density], STATE_DATA["California"][:population])
-california.virus_effects
+#california = VirusPredictor.new("California")
+#california.virus_effects
 
-alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
-alaska.virus_effects
+#alaska = VirusPredictor.new("Alaska")
+#alaska.virus_effects
 
 
+def predictor_list(state)
+state.each do |state, population|
+        predictor = VirusPredictor.new(state) 
+        predictor.virus_effects
+      end 
+end
+      predictor_list(STATE_DATA)
 #=======================================================================
-# Reflection Section
+=begin
+ Reflection Section
+What are the differences between the two different hash syntaxes shown in the state_data file?
+we have the symbol and the string.
+
+What does require_relative do? How is it different from require?
+require_relative incorporate files that are on the relative path and access the information within and require acees flies on the root of the computer.
+
+What are some ways to iterate through a hash?
+the basic way to iterate through a hash is by using .each
+
+When refactoring virus_effects, what stood out to you about the variables, if anything?
+They were all instance variables.
+
+What concept did you most solidify in this challenge?
+use of instance variable.
+
+=end
