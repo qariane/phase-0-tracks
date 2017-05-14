@@ -32,7 +32,7 @@ var hash = {};
  car('Raspberry_ombre', 'Prius', 2);
  
  function sport() {
-   console.log(this.model + ' is the fastest car i have ever drive!');
+   console.log(this.model + ' is the fastest car i have ever driven!');
  };
  
  sport('prius')
