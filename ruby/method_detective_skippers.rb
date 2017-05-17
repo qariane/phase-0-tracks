@@ -10,7 +10,7 @@
 
 # "zom".<???>
 # => “zoom”
-"zom".sub
+"zom".sub("o", "oo")
 
 # "enhance".<???>
 # => "    enhance    "
