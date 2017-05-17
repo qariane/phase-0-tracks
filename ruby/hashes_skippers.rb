@@ -1,5 +1,5 @@
 #Prompt the designer/user for all of this information.
-puts "This is the number one designer in the world, we are her to serve you and make your dream come true. To get started please give us your client's informations"
+puts "This is the number one designer in the world, we are her to serve you . To get started please give us your client's informations"
 # ask for all the information
 puts "Please give us your client's name"
 name = gets.chomp
@@ -19,7 +19,7 @@ puts "Are all these informations accurates or you would like to make some change
 
 if client_information == "y"
 	client_information = true 
-	puts "Thank you"
+	puts "Thank you for letting us make your dream come true"
 else 
 	client_information = false
 	puts "What would you like to update?"
