@@ -42,3 +42,46 @@ end
 end
 
 #p fibona(100)
+
+
+=begin
+Reelase 2 
+
+bubble sorting
+ [6,2,3,5,1,4]
+ [2,6,3,5,1,4]
+ [2,3,6,5,1,4]
+ [2,3,5,6,1,4]
+ [2,3,5,1,6,4]
+ [2,3,5,1,4,6]
+ [2,3,1,5,4,6]
+ [2,3,1,4,5,6]
+ [2,1,3,4,5,6]
+ [1,2,3,4,5,6]
+ 
+ Take a pair of data in the array and compare the value of each number
+
+ If the value a number is greater than the next one then we swap those values and continue until the array is in numerical order.
+=end
+
+array = [6,2,3,5,1,4]
+
+def bubble(array)
+
+	  n = array.length
+  loop do
+    swapped = false
+
+    (n-1).times do |i|
+      if array[i] > array[i+1]
+         array[i],array[i+1] = array[i+1], array[i]
+        swapped = true
+      end
+    end
+
+    break if not swapped
+  end
+
+  array
+end
+p bubble(array)
