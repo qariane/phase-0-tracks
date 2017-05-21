@@ -1,21 +1,13 @@
 ## method that takes a spy's real name 
 def name_alias(first_name, last_name)
- 
+ # first we take the real name 
  real_name = first_name + "" + last_name
  	switched_name = last_name + " " + first_name
  
  	namev2 = switched_name.chars.map!{|letter| letter.tr('aeiouAEIOU', 'eiouaEIOUA')}.join
- 
+ # we change it in a spy name 
  	spyname = namev2.chars.map!{|consonant| consonant.tr('bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVYXYZ','cdfghjklmnpqrstvwxyzbCDFGHJKLMNPQRSTVWXYZB')}.join
  
- 
- puts "#{spyname} is actually #{first_name}" " #{last_name}"
- 	
- 	userhash = {
-  	name: real_name,
-  	spy_name:  spyname
-  }
-  puts userhash
  end
  
  
@@ -29,25 +21,22 @@ def name_alias(first_name, last_name)
  break if first_name  == "quit" 
  puts "whats your last name"
  last_name = gets.chomp
- 
- #run the method
-  #name_alias(first_name,last_name) 
 
 
+  # use to store the name 
   id= {}
   new_name = name_alias(first_name, last_name)
-  id.store(new_name, first_name)
+  id.store(new_name, first_name + " " + last_name)
   
  end
  
-
- puts "When you leave make sure you keep the secret"
- id.each do |real_name, spyname|
-puts "#{real_name} is also know as #{spyname}."
+#interface
+ puts "Keep in mind that:"
+ id.each do |spyname, real_name|
+puts "#{spyname} is actually #{real_name}."
  end
-puts "WE WILL BE WATCHING YOU"
+puts "See you soon"
 
 
-   
-
+ 
  
