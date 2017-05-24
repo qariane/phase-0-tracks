@@ -19,7 +19,7 @@ module Shout
 
 #Driver
 wolf = Wolf.new
-puts wolf.yell_angrily("howl")
+puts wolf.self.yell_angrily("howl")
 puts wolf.yelling_happily("aha")
 
 monkey = Monkey.new
