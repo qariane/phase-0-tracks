@@ -21,6 +21,7 @@ end
 
 
 
+
 bird = Bird.new
 bird.take_off(800)
 
