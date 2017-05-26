@@ -130,5 +130,27 @@ remove_item(list, "Lemonade")
  p list 
 
 
+=begin
+What did you learn about pseudocode from working on this challenge?
+Pseudocode allows you to know what each line of a code is or expected to be. 
+
+What are the tradeoffs of using arrays and hashes for this challenge?
+hash = keys and values,
+arrays = index
+
+arrays have a lot of built in methods that allows us to use them easily
+Hashes also have built in method but in my opinion they are a little bit complex .
 
 
+What does a method return?
+A method return the last line of the method
+
+What kind of things can you pass into methods as arguments?
+You can pass input,objects, values into methods as arguments
+
+How can you pass information between methods?
+Pass the information as parameters 
+Set instance variables so that other methods can access them 
+
+What concepts were solidified in this challenge, and what concepts are still confusing?
+i really like the facts that we did the pseudocode that way we were able to quickly code. I will not say that something is confusing  i just need more practice
