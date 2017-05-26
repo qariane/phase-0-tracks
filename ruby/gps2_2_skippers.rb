@@ -112,21 +112,23 @@ def update_quantity(grocery_inventory, item_to_change, new_quantity)
 end
 
 
-item = ("Lemonade Tomatoes Onions Ice_Cream")
-list = create_shopping_list(item)
+items = ("Lemonade Tomatoes Onions Ice_Cream")
 
+list = create_shopping_list(items)
 
 update_quantity(list, "Lemonade", 2)
+
 update_quantity(list, "Tomatoes", 3)
+
 update_quantity(list, "Ice_Cream", 4)
 
 
 update_quantity(list, "Ice_Cream", 1)
+
 remove_item(list, "Lemonade")
  
  p list 
 
-# add_item(list, "orange")
 
 
 
