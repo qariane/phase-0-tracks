@@ -3,7 +3,7 @@ class WeddingGame
 attr_reader :word
 attr_accessor :guess_counts, :guesses, :user_input, :guess_array 
 
-  
+
 
  def initialize(word) 
   @word = word
@@ -52,11 +52,13 @@ if !secret_word.include? guess
  else
    end
 
-if secret_word.include? guess
-      p game.underscored
-end
+#if secret_word.include? guess
+     # p game.underscored
+#end
 
 
   
  end
 end
+
+
