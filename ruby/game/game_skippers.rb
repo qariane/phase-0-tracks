@@ -33,9 +33,9 @@ attr_accessor :user_input, :word
              @history << guesses
              end
   end 
+end 
 
-
-
+=begin
 #user interface
     puts "Welcome to the wedding game!"
     puts "This game is for 2 players."
@@ -80,5 +80,5 @@ elsif secret_word == guess && tries != 0
 else
  end
 end
-
+=end 
 
