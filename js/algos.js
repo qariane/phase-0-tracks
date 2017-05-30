@@ -69,3 +69,7 @@ function random(input)
 var arr = ["long phrase","longest phrase","longer phrase"];
 console.log(long(arr));
 
+first_function = {animal: "Dog", legs: 4};
+second_function = {animal: "Dog", legs: 3};
+console.log(key_value(first_function, second_function));
+
