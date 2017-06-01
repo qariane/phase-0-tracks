@@ -40,8 +40,8 @@ attr_accessor :user_input, :word
     puts "Welcome to the wedding game!"
     puts "This game is for 2 players."
     puts "Player 1, please enter a word for player 2 to guess..."
-    secret_word = gets.chomp
-
+    secret_word = gets.chomp.downcase
+    
 #Driver code
     game = Gameskippers.new(secret_word)
     puts "Ready?????"
@@ -54,13 +54,13 @@ attr_accessor :user_input, :word
 
  while tries > 0
     puts "Player 2, please guess a letter..."
-    letter = gets.chomp
+    letter = gets.chomp.
     p game.underscored
     game.guesses(letter)
     game.hint_count(letter)
     guesses << letter
     guess = guesses.last
-    
+     
  if !secret_word.include? guess 
       puts "This letter is not in the word"
       tries -= 1 
@@ -74,11 +74,12 @@ attr_accessor :user_input, :word
 if tries == 0
       puts "You ran out of guesses!! GAME OVER!!"
       
-
-elsif secret_word == guess && tries != 0 
-
-else
+end 
+if guess == secret_word #&& tries != 0 
+      puts "congratulations" 
+        
+#else
  end
 end
-
+ 
 
