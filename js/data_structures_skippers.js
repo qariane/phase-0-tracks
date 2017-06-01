@@ -1,3 +1,4 @@
+//@EWOTRING
 
 //Release 0 
 var color = ["purple", "iridescent blue", "black ash", "raspberry ombre"]
