@@ -1,7 +1,7 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [, with mark_franciose ].
+# We spent 1h 30mn on this challenge.
 
 # Require relative - 'Adds' another file to the current file, in the same local directory. You can use a class, module... etc. from the other file.
 
