@@ -29,17 +29,17 @@ class VirusPredictor
   def predicted_deaths()
     # predicted deaths is solely based on population density
     if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
+     modifier = 0.4
     elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
+      modifier =  0.3
     elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
+      modifier = 0.2
     elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
+     modifier =  0.1
     else
-      number_of_deaths = (@population * 0.05).floor
+      modifier = 0.05
     end
-
+     number_of_deaths = (@population * modifier).floor
    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
  end
@@ -91,4 +91,23 @@ alaska.virus_effects
 
 
 #=======================================================================
-# Reflection Section
+
+=begin
+ 
+ Reflection Section
+What are the differences between the two different hash syntaxes shown in the state_data file?
+we have the symbol and the string.
+
+What does require_relative do? How is it different from require?
+require_relative incorporate files that are on the relative path and access the information within and require acees flies on the root of the computer.
+
+What are some ways to iterate through a hash?
+the basic way to iterate through a hash is by using .each
+
+When refactoring virus_effects, what stood out to you about the variables, if anything?
+They were all instance variables.
+
+What concept did you most solidify in this challenge?
+use of instance variable.
+
+=end
